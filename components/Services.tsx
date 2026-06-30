@@ -124,19 +124,19 @@ export default function Services({ onOpenModal }: ServicesProps) {
               onMouseEnter={() => window.innerWidth > 768 && setActiveCard(index)}
               onMouseLeave={() => window.innerWidth > 768 && setActiveCard(null)}
               onClick={() => window.innerWidth <= 768 && setActiveCard(isExpanded ? null : index)}
-              className={`group flex flex-col rounded-xl border bg-bg-panel/40 p-6 shadow-[0_8px_30px_rgb(0,0,0,0.15)] backdrop-blur-xs transition-all duration-300 cursor-pointer ${
+              className={`group relative flex flex-col rounded-xl border bg-bg-panel/40 p-6 shadow-[0_8px_30px_rgb(0,0,0,0.15)] backdrop-blur-xs transition-all duration-300 cursor-pointer ${
                 isExpanded ? "border-gold-light bg-bg-panel" : "border-border-light hover:border-gold-primary/30"
               }`}
             >
               {/* Card Header (Always visible) */}
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-center gap-4">
+              <div className="flex flex-col items-center text-center md:flex-row md:items-center md:text-right gap-4 pl-8 md:pl-0">
+                <div className="flex flex-col items-center md:flex-row md:items-center gap-4">
                   <div className={`p-3 rounded-lg border transition-colors duration-300 ${
                     isExpanded ? "bg-gold-primary/10 border-gold-light/20 text-gold-light" : "bg-bg-deep border-border-light text-gold-primary group-hover:text-gold-light"
                   }`}>
                     <Icon className="h-6 w-6" />
                   </div>
-                  <div className="text-right">
+                  <div>
                     <h3 className="text-base font-bold text-text-light group-hover:text-gold-light transition-colors duration-200">
                       {service.title}
                     </h3>
@@ -145,7 +145,7 @@ export default function Services({ onOpenModal }: ServicesProps) {
                     </span>
                   </div>
                 </div>
-                <ChevronDown className={`h-5 w-5 text-text-muted transition-transform duration-300 ${
+                <ChevronDown className={`absolute left-6 top-6.5 h-5 w-5 text-text-muted transition-transform duration-300 ${
                   isExpanded ? "rotate-180 text-gold-light" : "group-hover:text-text-light"
                 }`} />
               </div>

@@ -89,14 +89,14 @@ export default function Contact({ onShowToast }: ContactProps) {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Contact Info Column */}
-        <div className="lg:col-span-5 space-y-8 text-right">
-          <h3 className="text-xl font-bold text-text-light">
+        <div className="lg:col-span-5 space-y-8 text-center lg:text-right">
+          <h3 className="text-xl font-bold text-text-light text-center lg:text-right">
             بيانات ومعلومات الاتصال الرسمية
           </h3>
 
           <div className="space-y-6">
             {/* Phone */}
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col items-center lg:flex-row lg:items-start text-center lg:text-right gap-4">
               <div className="p-3 rounded-lg border border-border-light bg-gold-primary/2 text-gold-primary flex-shrink-0">
                 <Phone className="h-5 w-5" />
               </div>
@@ -109,7 +109,7 @@ export default function Contact({ onShowToast }: ContactProps) {
             </div>
 
             {/* Email */}
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col items-center lg:flex-row lg:items-start text-center lg:text-right gap-4">
               <div className="p-3 rounded-lg border border-border-light bg-gold-primary/2 text-gold-primary flex-shrink-0">
                 <Mail className="h-5 w-5" />
               </div>
@@ -122,7 +122,7 @@ export default function Contact({ onShowToast }: ContactProps) {
             </div>
 
             {/* WhatsApp Direct CTA */}
-            <div className="pt-2">
+            <div className="pt-2 text-center lg:text-right">
               <a
                 href="https://api.whatsapp.com/send?phone=966506662700&text=%D8%B7%D9%84%D8%A8%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%A7%D9%84%D9%8A%D9%86%D8%A9%20%D8%B1%D8%B3%D9%85%D9%8A%D8%A9"
                 target="_blank"
@@ -137,9 +137,9 @@ export default function Contact({ onShowToast }: ContactProps) {
 
           {/* Licensing Info */}
           <div className="border-t border-border-light pt-6 mt-8">
-            <div className="flex items-start gap-3">
+            <div className="flex flex-col items-center lg:flex-row lg:items-start text-center lg:text-right gap-3">
               <Award className="h-5 w-5 text-gold-light flex-shrink-0 mt-0.5" />
-              <p className="text-xs text-text-muted leading-relaxed">
+              <p className="text-xs text-text-muted leading-relaxed text-right">
                 مكتب جواد بن عبدالله الخرس للاستشارات المالية، مرخص رسمياً في المملكة العربية السعودية لتقديم الخدمات الاستشارية لغير الأوراق المالية. نلتزم بكافة المعايير المهنية والقوانين المنظمة للقطاع التجاري الصادرة عن الجهات الحكومية والرقابية ذات الصلة.
               </p>
             </div>
@@ -149,8 +149,8 @@ export default function Contact({ onShowToast }: ContactProps) {
         {/* Lead Capture Form Column */}
         <div className="lg:col-span-7">
           <div className="rounded-xl border border-border-light bg-bg-panel/40 p-8 shadow-[0_8px_30px_rgb(0,0,0,0.15)] backdrop-blur-xs">
-            <h4 className="text-lg font-bold text-text-light mb-2">طلب استشارة مجانية أولية</h4>
-            <p className="text-xs sm:text-sm text-text-muted mb-8">
+            <h4 className="text-lg font-bold text-text-light mb-2 text-center lg:text-right">طلب استشارة مجانية أولية</h4>
+            <p className="text-xs sm:text-sm text-text-muted mb-8 text-center lg:text-right">
               يرجى تعبئة الحقول أدناه بدقة، وسيقوم المستشار المالي بدراسة المعطيات الأولية والتواصل معكم.
             </p>
 

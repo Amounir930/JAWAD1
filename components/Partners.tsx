@@ -68,7 +68,7 @@ export default function Partners() {
         {logos.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-4 bg-bg-panel/20 border border-border-light rounded-xl px-5 py-3.5 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 hover:border-gold-primary/30 hover:bg-bg-panel/40 transition-all duration-300"
+            className="flex flex-col items-center text-center sm:flex-row sm:text-right gap-4 bg-bg-panel/20 border border-border-light rounded-xl px-5 py-3.5 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 hover:border-gold-primary/30 hover:bg-bg-panel/40 transition-all duration-300"
           >
             {/* SVG Icon */}
             <div className="flex-shrink-0">
@@ -76,7 +76,7 @@ export default function Partners() {
             </div>
             
             {/* Labels */}
-            <div className="text-right flex flex-col justify-center">
+            <div className="text-center sm:text-right flex flex-col justify-center">
               <span className="text-xs font-bold text-text-light">{item.label}</span>
               <span className="text-[10px] text-text-muted mt-0.5 font-mono">{item.desc}</span>
             </div>

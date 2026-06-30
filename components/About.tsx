@@ -26,15 +26,15 @@ export default function About() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:col-span-7 space-y-6 text-right"
         >
-          <h3 className="text-xl font-bold text-text-light">
+          <h3 className="text-xl font-bold text-text-light text-center lg:text-right">
             حلول مالية متزنة تنطلق من الخبرة الأكاديمية والواقع التجاري للمملكة
           </h3>
-          <p className="text-text-muted leading-relaxed text-justify">
+          <p className="text-text-muted leading-relaxed text-right">
             تأسس مكتب جواد بن عبدالله الخرس للاستشارات المالية ليكون شريكاً استراتيجياً موثوقاً للمنشآت التجارية والشركات المتوسطة والصغيرة في المملكة العربية السعودية. ننطلق من منهجية علمية وأكاديمية دقيقة تهدف إلى تنظيم وتأمين وحوكمة حسابات المنشأة وتطبيق أرقى المعايير المهنية لتفادي الخسائر وتوفير قراءة دقيقة وسهلة للوضع المالي والتدفقات النقدية.
           </p>
 
           <div className="border-r-4 border-gold-primary bg-gold-primary/2 p-5 rounded-l-lg mt-8">
-            <p className="font-medium text-text-light text-sm leading-relaxed">
+            <p className="font-medium text-text-light text-sm leading-relaxed text-right">
               نلتزم بتقديم تقارير مالية شفافة وواضحة تمنح الملاك وأصحاب القرار رؤية متكاملة تدعم قرارات التنمية والاستقرار المالي والتوسع التجاري المدروس.
             </p>
           </div>
@@ -49,19 +49,19 @@ export default function About() {
           className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6"
         >
           <div className="group rounded-xl border border-border-light bg-bg-panel/40 p-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xs hover:border-border-hover hover:scale-102 transition-all duration-300">
-            <h4 className="text-base font-bold text-gold-light group-hover:text-gold-primary transition-colors duration-200 mb-3">
+            <h4 className="text-base font-bold text-gold-light group-hover:text-gold-primary transition-colors duration-200 mb-3 text-center sm:text-right">
               رؤيتنا
             </h4>
-            <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
+            <p className="text-xs sm:text-sm text-text-muted leading-relaxed text-right">
               أن نكون الشريك المالي والاستشاري الأكثر موثوقية وتمكيناً للمنشآت التجارية والشركات الواعدة في السوق المحلي.
             </p>
           </div>
 
           <div className="group rounded-xl border border-border-light bg-bg-panel/40 p-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xs hover:border-border-hover hover:scale-102 transition-all duration-300">
-            <h4 className="text-base font-bold text-gold-light group-hover:text-gold-primary transition-colors duration-200 mb-3">
+            <h4 className="text-base font-bold text-gold-light group-hover:text-gold-primary transition-colors duration-200 mb-3 text-center sm:text-right">
               رسالتنا
             </h4>
-            <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
+            <p className="text-xs sm:text-sm text-text-muted leading-relaxed text-right">
               تقديم استشارات مالية وزكوية وضريبية رصينة تحمي الكيانات الاقتصادية وتدفعها نحو النمو المستدام وتتفادى العقوبات والغرامات.
             </p>
           </div>

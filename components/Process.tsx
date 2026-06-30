@@ -110,10 +110,10 @@ export default function Process() {
                 transition={{ duration: 0.5, delay: index * 0.15, ease: [0.25, 1, 0.5, 1] }}
                 className="mr-6 sm:mr-10 md:mr-12 group rounded-xl border border-border-light bg-bg-panel/20 p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.1)] backdrop-blur-xs hover:border-gold-primary/20 hover:bg-bg-panel/40 transition-all duration-300 w-full"
               >
-                <h3 className="text-base sm:text-lg font-bold text-text-light group-hover:text-gold-light transition-colors duration-200 mb-2">
+                <h3 className="text-base sm:text-lg font-bold text-text-light group-hover:text-gold-light transition-colors duration-200 mb-2 text-center sm:text-right">
                   {step.title}
                 </h3>
-                <p className="text-xs sm:text-sm leading-relaxed text-text-muted">
+                <p className="text-xs sm:text-sm leading-relaxed text-text-muted text-right">
                   {step.desc}
                 </p>
               </motion.div>
