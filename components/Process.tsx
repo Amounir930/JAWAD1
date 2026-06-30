@@ -84,10 +84,10 @@ export default function Process() {
               <motion.div
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.4, delay: index * 0.1, ease: "easeOut" }}
-                className="absolute right-[-31px] sm:right-[-43px] md:right-[-55px] top-0 flex h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 items-center justify-center rounded-full border-2 bg-bg-deep border-border-light text-text-light font-mono font-extrabold text-sm sm:text-base md:text-lg z-10 transition-colors duration-300 select-none"
+                className="absolute right-[-33px] sm:right-[-45px] md:right-[-57px] top-0 flex h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 items-center justify-center rounded-full border-2 bg-bg-deep border-border-light text-text-light font-mono font-extrabold text-sm sm:text-base md:text-lg z-10 transition-colors duration-300 select-none"
                 // Using framer motion dynamic classes on active states
                 variants={{
-                  inactive: { opacity: 0, scale: 0.6, borderColor: "rgba(190, 156, 70, 0.15)", color: "#9bb0ac", boxShadow: "none" },
+                  inactive: { opacity: 1, scale: 1, borderColor: "rgba(190, 156, 70, 0.2)", color: "#9bb0ac", boxShadow: "none" },
                   active: { 
                     opacity: 1,
                     scale: 1,
